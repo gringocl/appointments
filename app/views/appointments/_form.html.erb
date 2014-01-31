@@ -1,0 +1,14 @@
+<%= simple_form_for(@appointment, class: "large-12 columns") do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :physician %>
+    <%= f.association :patient %>
+    <%= f.input :datetime %>
+    <%= f.input :notes %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

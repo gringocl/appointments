@@ -1,0 +1,32 @@
+<h1>Listing appointments</h1>
+
+
+<%= paginate @appointments  %>
+
+       <!-- Main Feed -->
+    <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+    <div class="large-9 columns">
+
+     <% @appointments.each do |appointment| %>     <!-- Feed Entry -->
+      <div class="row">
+
+        <div class="large-6 columns text-justify">
+          <p><strong>Date: </strong> <%= appointment.datetime.to_s %> </p>
+          <p><strong>Doctor: </strong> <%= appointment.physician.name %> </p>
+          <p><strong>Patient: </strong><%= appointment.patient.name %></p>
+        </div>
+          <div class="row">
+          <ul>
+            <li><%= link_to 'Show', appointment, class: "button tiny radius secondary" %></li>
+            <li><%= link_to 'Edit', edit_appointment_path(appointment), class: "button alert tiny radius" %></li>
+          </ul>
+          </div>
+        </div>
+      <hr />
+
+    <% end %>
+
+<%= paginate @appointments  %>
+
+
+          </div>
