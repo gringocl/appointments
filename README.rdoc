@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+More Ffaker data, was fun trying to play with date time objects
 
-Things you may want to cover:
+Used pagination.  Have fun with the seeds.rb
 
-* Ruby version
+Also has some goodies with simple forms and zurb foundation, custom wrapper
 
-* System dependencies
+that I snagged from here.  Thanks 
 
-* Configuration
+http://railscasts.com/episodes/417-foundation?view=comments
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+:q
